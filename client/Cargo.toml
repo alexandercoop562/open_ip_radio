@@ -1,0 +1,24 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2024"
+
+[features]
+profile = []
+
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(tarpaulin_include)'] }
+
+[dependencies]
+anyhow.workspace = true
+futures-util.workspace = true
+rodio.workspace = true
+
+serde.workspace = true
+serde_json.workspace = true
+
+tokio-tungstenite.workspace = true
+tokio.workspace = true
+dhat.workspace = true
+
+cpal = "0.16"

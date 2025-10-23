@@ -1,0 +1,13 @@
+[report]
+out = ["Stdout"]
+fail-under = 100.0
+
+[exclude]
+files = [
+  "station/src/main.rs",
+  "client/src/main.rs",
+  "station/src/audio/codec.rs",
+  "station/src/audio/song.rs",
+  "station/src/network/packets.rs",
+  "client/src/connection.rs"
+]
